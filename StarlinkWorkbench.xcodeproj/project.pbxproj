@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB0000000000000000000001 /* StarlinkWorkbenchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000001 /* StarlinkWorkbenchApp.swift */; };
+		FB0000000000000000000002 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000002 /* AppModel.swift */; };
+		FB0000000000000000000003 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000003 /* Theme.swift */; };
+		FB0000000000000000000004 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000004 /* Constants.swift */; };
+		FB0000000000000000000005 /* ServerProber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000005 /* ServerProber.swift */; };
+		FB0000000000000000000006 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000006 /* APIClient.swift */; };
+		FB0000000000000000000007 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000007 /* KeychainStore.swift */; };
+		FB0000000000000000000008 /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000008 /* SoundEngine.swift */; };
+		FB0000000000000000000009 /* HapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000009 /* HapticEngine.swift */; };
+		FB000000000000000000000A /* TorchBlinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000000A /* TorchBlinker.swift */; };
+		FB000000000000000000000B /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000000B /* NetworkMonitor.swift */; };
+		FB000000000000000000000C /* AlertCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000000C /* AlertCenter.swift */; };
+		FB000000000000000000000D /* DoorbellGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000000D /* DoorbellGuard.swift */; };
+		FB000000000000000000000E /* WorkbenchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000000E /* WorkbenchController.swift */; };
+		FB000000000000000000000F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000000F /* RootView.swift */; };
+		FB0000000000000000000010 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000010 /* ConnectView.swift */; };
+		FB0000000000000000000011 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000011 /* LoginView.swift */; };
+		FB0000000000000000000012 /* WorkbenchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000012 /* WorkbenchScreen.swift */; };
+		FB0000000000000000000013 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000013 /* SettingsView.swift */; };
+		FB0000000000000000000014 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000014 /* AboutView.swift */; };
+		FB0000000000000000000016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000016 /* Assets.xcassets */; };
+		FB0000000000000000000017 /* default.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000017 /* default.wav */; };
+		FB0000000000000000000018 /* qq.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000018 /* qq.wav */; };
+		FB0000000000000000000019 /* wechat.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000019 /* wechat.wav */; };
+		FB000000000000000000001A /* knock.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000001A /* knock.wav */; };
+		FB000000000000000000001B /* cough.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000001B /* cough.wav */; };
+		FB000000000000000000001C /* doorbell.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000001C /* doorbell.wav */; };
+		FB000000000000000000001D /* silent.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000001D /* silent.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA0000000000000000000001 /* StarlinkWorkbenchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlinkWorkbenchApp.swift; sourceTree = "<group>"; };
+		FA0000000000000000000002 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		FA0000000000000000000003 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		FA0000000000000000000004 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA0000000000000000000005 /* ServerProber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerProber.swift; sourceTree = "<group>"; };
+		FA0000000000000000000006 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FA0000000000000000000007 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		FA0000000000000000000008 /* SoundEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEngine.swift; sourceTree = "<group>"; };
+		FA0000000000000000000009 /* HapticEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticEngine.swift; sourceTree = "<group>"; };
+		FA000000000000000000000A /* TorchBlinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchBlinker.swift; sourceTree = "<group>"; };
+		FA000000000000000000000B /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		FA000000000000000000000C /* AlertCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCenter.swift; sourceTree = "<group>"; };
+		FA000000000000000000000D /* DoorbellGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorbellGuard.swift; sourceTree = "<group>"; };
+		FA000000000000000000000E /* WorkbenchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkbenchController.swift; sourceTree = "<group>"; };
+		FA000000000000000000000F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FA0000000000000000000010 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		FA0000000000000000000011 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FA0000000000000000000012 /* WorkbenchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkbenchScreen.swift; sourceTree = "<group>"; };
+		FA0000000000000000000013 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FA0000000000000000000014 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		FA0000000000000000000015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0000000000000000000016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA0000000000000000000017 /* default.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = default.wav; sourceTree = "<group>"; };
+		FA0000000000000000000018 /* qq.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = qq.wav; sourceTree = "<group>"; };
+		FA0000000000000000000019 /* wechat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wechat.wav; sourceTree = "<group>"; };
+		FA000000000000000000001A /* knock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = knock.wav; sourceTree = "<group>"; };
+		FA000000000000000000001B /* cough.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cough.wav; sourceTree = "<group>"; };
+		FA000000000000000000001C /* doorbell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = doorbell.wav; sourceTree = "<group>"; };
+		FA000000000000000000001D /* silent.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = silent.wav; sourceTree = "<group>"; };
+		FA000000000000000000001E /* StarlinkWorkbench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarlinkWorkbench.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD0000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC0000000000000000000001 /* StarlinkWorkbench */ = {
+			isa = PBXGroup;
+			children = (
+				FC0000000000000000000002 /* App */,
+				FC0000000000000000000003 /* Core */,
+				FC0000000000000000000004 /* Views */,
+				FC0000000000000000000005 /* Resources */,
+				FA0000000000000000000015 /* Info.plist */,
+				FC0000000000000000000007 /* Products */,
+			);
+			path = StarlinkWorkbench;
+			sourceTree = "<group>";
+		};
+		FC0000000000000000000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA0000000000000000000001 /* StarlinkWorkbenchApp.swift */,
+				FA0000000000000000000002 /* AppModel.swift */,
+				FA0000000000000000000003 /* Theme.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FC0000000000000000000003 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FA0000000000000000000004 /* Constants.swift */,
+				FA0000000000000000000005 /* ServerProber.swift */,
+				FA0000000000000000000006 /* APIClient.swift */,
+				FA0000000000000000000007 /* KeychainStore.swift */,
+				FA0000000000000000000008 /* SoundEngine.swift */,
+				FA0000000000000000000009 /* HapticEngine.swift */,
+				FA000000000000000000000A /* TorchBlinker.swift */,
+				FA000000000000000000000B /* NetworkMonitor.swift */,
+				FA000000000000000000000C /* AlertCenter.swift */,
+				FA000000000000000000000D /* DoorbellGuard.swift */,
+				FA000000000000000000000E /* WorkbenchController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FC0000000000000000000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA000000000000000000000F /* RootView.swift */,
+				FA0000000000000000000010 /* ConnectView.swift */,
+				FA0000000000000000000011 /* LoginView.swift */,
+				FA0000000000000000000012 /* WorkbenchScreen.swift */,
+				FA0000000000000000000013 /* SettingsView.swift */,
+				FA0000000000000000000014 /* AboutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC0000000000000000000005 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA0000000000000000000016 /* Assets.xcassets */,
+				FC0000000000000000000006 /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC0000000000000000000006 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FA0000000000000000000017 /* default.wav */,
+				FA0000000000000000000018 /* qq.wav */,
+				FA0000000000000000000019 /* wechat.wav */,
+				FA000000000000000000001A /* knock.wav */,
+				FA000000000000000000001B /* cough.wav */,
+				FA000000000000000000001C /* doorbell.wav */,
+				FA000000000000000000001D /* silent.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		FC0000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA000000000000000000001E /* StarlinkWorkbench.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE0000000000000000000001 /* StarlinkWorkbench */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0000000000000000000003 /* Build configuration list for PBXNativeTarget "StarlinkWorkbench" */;
+			buildPhases = (
+				FD0000000000000000000001 /* Sources */,
+				FD0000000000000000000002 /* Frameworks */,
+				FD0000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarlinkWorkbench;
+			productName = StarlinkWorkbench;
+			productReference = FA000000000000000000001E /* StarlinkWorkbench.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					FE0000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = FF0000000000000000000002 /* Build configuration list for PBXProject "StarlinkWorkbench" */;
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				zh_CN,
+				Base,
+			);
+			mainGroup = FC0000000000000000000001 /* StarlinkWorkbench */;
+			productRefGroup = FC0000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE0000000000000000000001 /* StarlinkWorkbench */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD0000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0000000000000000000016 /* Assets.xcassets in Resources */,
+				FB0000000000000000000017 /* default.wav in Resources */,
+				FB0000000000000000000018 /* qq.wav in Resources */,
+				FB0000000000000000000019 /* wechat.wav in Resources */,
+				FB000000000000000000001A /* knock.wav in Resources */,
+				FB000000000000000000001B /* cough.wav in Resources */,
+				FB000000000000000000001C /* doorbell.wav in Resources */,
+				FB000000000000000000001D /* silent.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD0000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0000000000000000000001 /* StarlinkWorkbenchApp.swift in Sources */,
+				FB0000000000000000000002 /* AppModel.swift in Sources */,
+				FB0000000000000000000003 /* Theme.swift in Sources */,
+				FB0000000000000000000004 /* Constants.swift in Sources */,
+				FB0000000000000000000005 /* ServerProber.swift in Sources */,
+				FB0000000000000000000006 /* APIClient.swift in Sources */,
+				FB0000000000000000000007 /* KeychainStore.swift in Sources */,
+				FB0000000000000000000008 /* SoundEngine.swift in Sources */,
+				FB0000000000000000000009 /* HapticEngine.swift in Sources */,
+				FB000000000000000000000A /* TorchBlinker.swift in Sources */,
+				FB000000000000000000000B /* NetworkMonitor.swift in Sources */,
+				FB000000000000000000000C /* AlertCenter.swift in Sources */,
+				FB000000000000000000000D /* DoorbellGuard.swift in Sources */,
+				FB000000000000000000000E /* WorkbenchController.swift in Sources */,
+				FB000000000000000000000F /* RootView.swift in Sources */,
+				FB0000000000000000000010 /* ConnectView.swift in Sources */,
+				FB0000000000000000000011 /* LoginView.swift in Sources */,
+				FB0000000000000000000012 /* WorkbenchScreen.swift in Sources */,
+				FB0000000000000000000013 /* SettingsView.swift in Sources */,
+				FB0000000000000000000014 /* AboutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF0000000000000000000004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMBOL_STRIP = NO;
+			};
+			name = Debug;
+		};
+		FF0000000000000000000005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF0000000000000000000006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StarlinkWorkbench/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "星链";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlink.workbench;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FF0000000000000000000007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StarlinkWorkbench/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "星链";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlink.workbench;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF0000000000000000000002 /* Build configuration list for PBXProject "StarlinkWorkbench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0000000000000000000004 /* Debug */,
+				FF0000000000000000000005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0000000000000000000003 /* Build configuration list for PBXNativeTarget "StarlinkWorkbench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0000000000000000000006 /* Debug */,
+				FF0000000000000000000007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF0000000000000000000001 /* Project object */;
+}
