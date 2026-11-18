@@ -29,8 +29,10 @@ jobs:
 
       - name: Package unsigned ipa
         run: |
+          APP=$(find build -name "StarlinkWorkbench.app" -type d | head -1)
+          echo "Found app: $APP"
           mkdir -p Payload
-          cp -R build/Release-iphoneos/StarlinkWorkbench.app Payload/
+          cp -R "$APP" Payload/
           zip -qry starlink-unsigned.ipa Payload
           ls -la starlink-unsigned.ipa
 
