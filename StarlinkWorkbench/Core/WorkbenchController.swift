@@ -27,7 +27,6 @@ final class WorkbenchController: NSObject, ObservableObject {
         let cfg = WKWebViewConfiguration()
         cfg.websiteDataStore = .default()               // 持久化会话，与 Safari 天然隔离（对齐安卓独立数据目录）
         cfg.allowsInlineMediaPlayback = true
-        cfg.mediaTypesRequiringUserAction = []          // 网页提示音自动播放（关键：不弹手势要求）
 
         let ucc = cfg.userContentController
         ucc.addUserScript(WKUserScript(source: WorkbenchController.skinScript,
