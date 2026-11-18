@@ -187,7 +187,7 @@ struct CustomerRow: View {
 
                     // chips：来源 / 金额 / 地区 / 备注
                     HStack(spacing: 6) {
-                        chip(qrChip)
+                        chip(qrChip.0, muted: qrChip.1)
                         if !customer.amount.isEmpty { chip(customer.amount, muted: false) }
                         if !customer.region.isEmpty { chip(customer.region) }
                         if !customer.note.isEmpty { chip("📝 \(customer.note)") }
