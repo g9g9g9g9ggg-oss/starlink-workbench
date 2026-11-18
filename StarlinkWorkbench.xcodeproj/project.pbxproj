@@ -27,6 +27,18 @@
 		FB0000000000000000000012 /* WorkbenchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000012 /* WorkbenchScreen.swift */; };
 		FB0000000000000000000013 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000013 /* SettingsView.swift */; };
 		FB0000000000000000000014 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000014 /* AboutView.swift */; };
+		FB0000000000000000000021 /* WBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000021 /* WBAPI.swift */; };
+		FB0000000000000000000022 /* RealtimeCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000022 /* RealtimeCenter.swift */; };
+		FB0000000000000000000023 /* WorkbenchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000023 /* WorkbenchStore.swift */; };
+		FB0000000000000000000024 /* WBUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000024 /* WBUI.swift */; };
+		FB0000000000000000000025 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000025 /* RootTabView.swift */; };
+		FB0000000000000000000026 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000026 /* HomeView.swift */; };
+		FB0000000000000000000027 /* ReceptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000027 /* ReceptionView.swift */; };
+		FB0000000000000000000028 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000028 /* ChatScreen.swift */; };
+		FB0000000000000000000029 /* ProfileSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000029 /* ProfileSheet.swift */; };
+		FB000000000000000000002A /* QuickPanelSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000002A /* QuickPanelSheet.swift */; };
+		FB000000000000000000002B /* QrPoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000002B /* QrPoolView.swift */; };
+		FB000000000000000000002C /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA000000000000000000002C /* MeView.swift */; };
 		FB0000000000000000000016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000016 /* Assets.xcassets */; };
 		FB0000000000000000000017 /* default.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000017 /* default.wav */; };
 		FB0000000000000000000018 /* qq.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000018 /* qq.wav */; };
@@ -58,6 +70,18 @@
 		FA0000000000000000000012 /* WorkbenchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkbenchScreen.swift; sourceTree = "<group>"; };
 		FA0000000000000000000013 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FA0000000000000000000014 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		FA0000000000000000000021 /* WBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAPI.swift; sourceTree = "<group>"; };
+		FA0000000000000000000022 /* RealtimeCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeCenter.swift; sourceTree = "<group>"; };
+		FA0000000000000000000023 /* WorkbenchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkbenchStore.swift; sourceTree = "<group>"; };
+		FA0000000000000000000024 /* WBUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBUI.swift; sourceTree = "<group>"; };
+		FA0000000000000000000025 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		FA0000000000000000000026 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FA0000000000000000000027 /* ReceptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionView.swift; sourceTree = "<group>"; };
+		FA0000000000000000000028 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		FA0000000000000000000029 /* ProfileSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSheet.swift; sourceTree = "<group>"; };
+		FA000000000000000000002A /* QuickPanelSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPanelSheet.swift; sourceTree = "<group>"; };
+		FA000000000000000000002B /* QrPoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrPoolView.swift; sourceTree = "<group>"; };
+		FA000000000000000000002C /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		FA0000000000000000000015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0000000000000000000016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA0000000000000000000017 /* default.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = default.wav; sourceTree = "<group>"; };
@@ -118,6 +142,9 @@
 				FA000000000000000000000C /* AlertCenter.swift */,
 				FA000000000000000000000D /* DoorbellGuard.swift */,
 				FA000000000000000000000E /* WorkbenchController.swift */,
+				FA0000000000000000000021 /* WBAPI.swift */,
+				FA0000000000000000000022 /* RealtimeCenter.swift */,
+				FA0000000000000000000023 /* WorkbenchStore.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -131,6 +158,15 @@
 				FA0000000000000000000012 /* WorkbenchScreen.swift */,
 				FA0000000000000000000013 /* SettingsView.swift */,
 				FA0000000000000000000014 /* AboutView.swift */,
+				FA0000000000000000000024 /* WBUI.swift */,
+				FA0000000000000000000025 /* RootTabView.swift */,
+				FA0000000000000000000026 /* HomeView.swift */,
+				FA0000000000000000000027 /* ReceptionView.swift */,
+				FA0000000000000000000028 /* ChatScreen.swift */,
+				FA0000000000000000000029 /* ProfileSheet.swift */,
+				FA000000000000000000002A /* QuickPanelSheet.swift */,
+				FA000000000000000000002B /* QrPoolView.swift */,
+				FA000000000000000000002C /* MeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +297,18 @@
 				FB0000000000000000000012 /* WorkbenchScreen.swift in Sources */,
 				FB0000000000000000000013 /* SettingsView.swift in Sources */,
 				FB0000000000000000000014 /* AboutView.swift in Sources */,
+				FB0000000000000000000021 /* WBAPI.swift in Sources */,
+				FB0000000000000000000022 /* RealtimeCenter.swift in Sources */,
+				FB0000000000000000000023 /* WorkbenchStore.swift in Sources */,
+				FB0000000000000000000024 /* WBUI.swift in Sources */,
+				FB0000000000000000000025 /* RootTabView.swift in Sources */,
+				FB0000000000000000000026 /* HomeView.swift in Sources */,
+				FB0000000000000000000027 /* ReceptionView.swift in Sources */,
+				FB0000000000000000000028 /* ChatScreen.swift in Sources */,
+				FB0000000000000000000029 /* ProfileSheet.swift in Sources */,
+				FB000000000000000000002A /* QuickPanelSheet.swift in Sources */,
+				FB000000000000000000002B /* QrPoolView.swift in Sources */,
+				FB000000000000000000002C /* MeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +419,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -382,7 +430,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.1;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.starlink.workbench;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -397,7 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -408,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.1;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.starlink.workbench;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
