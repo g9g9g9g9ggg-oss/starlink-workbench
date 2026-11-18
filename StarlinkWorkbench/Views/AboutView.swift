@@ -22,17 +22,17 @@ struct AboutView: View {
             .listRowBackground(Color.wxBackground)
 
             Section("版本") {
-                row("iOS 原生版", "1.6.1 (8)")
+                row("iOS 原生版", "2.0.0 (20)")
                 row("对标 Android 版", "1.6.1 (versionCode 8)")
                 row("功能基线", "与网页版/桌面版完全一致")
             }
 
             Section("架构") {
-                row("实现", "原生 SwiftUI 壳 + 线上工作台本体")
-                row("实时层", "SSE /api/events（网页承担）")
+                row("实现", "纯原生 SwiftUI（四页签 + SSE 实时 + 门铃守护）")
+                row("实时层", "原生 SSE /api/events + 轮询兜底")
                 row("后台守护", "BGAppRefresh + 可选音频保活")
                 row("提示音", "离线合成音源（与 WebAudio 同参数）")
-                row("皮肤", "wechat（与安卓壳同款注入）")
+                row("视觉", "STRATUM 图纸风（纸面/墨线/朱砂）")
             }
 
             Section {
