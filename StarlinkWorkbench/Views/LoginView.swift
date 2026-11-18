@@ -96,7 +96,7 @@ struct LoginView: View {
                         .frame(height: 54)
                         .background(
                             RoundedRectangle(cornerRadius: Strat.corner)
-                                .fill(canSubmit ? Color.accent : Color(hex: 0xB8B8BE))
+                                .fill(canSubmit ? Color.stratumAccent : Color(hex: 0xB8B8BE))
                         )
                     }
                     .buttonStyle(.plain)
