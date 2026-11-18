@@ -109,11 +109,10 @@ final class WorkbenchStore: ObservableObject {
     }
 
     private func inDND() -> Bool {
-        let dnd = UserDefaults.standard.dictionary(forKey: "xl_dnd") as? [String: Any] ?? [:]
-        let on = dnd["on"] as? Bool ?? false
-        guard on else { return false }
-        let s = dnd["s"] as? Int ?? 23
-        let e = dnd["e"] as? Int ?? 8
+        let dndOn = UserDefaults.standard.bool(forKey: "xl_dnd_on")
+        guard dndOn else { return false }
+        let s = UserDefaults.standard.object(forKey: "xl_dnd_s") as? Int ?? 23
+        let e = UserDefaults.standard.object(forKey: "xl_dnd_e") as? Int ?? 8
         let hour = Calendar.current.component(.hour, from: Date())
         if s <= e { return hour >= s && hour < e }
         return hour >= s || hour < e
