@@ -59,6 +59,9 @@ final class AppModel: ObservableObject {
 
     var webController: WorkbenchController { controller }
 
+    /// 原生工作台状态层（登录成功后创建；网页兜底路径为 nil）
+    @Published var store: WorkbenchStore?
+
     init() {
         keepAliveMode = UserDefaults.standard.bool(forKey: Constants.keepAliveKey)
         doorbellGuard = DoorbellGuard()
@@ -98,7 +101,7 @@ final class AppModel: ObservableObject {
         if let me {
             accountName = me.name
             phase = .workbench
-            controller.load(base: base, path: "/reception")
+            enterWorkbench(base: base, path: "/reception")
         } else {
             accountName = UserDefaults.standard.string(forKey: Constants.rememberedUsernameKey) ?? ""
             phase = .login
@@ -210,7 +213,17 @@ final class AppModel: ObservableObject {
         baseURL = URL(string: base)
         doorbellGuard.baseURL = baseURL
         phase = .workbench
-        controller.load(base: base, path: path)
+        if path == "/reception" {
+            // 原生工作台：状态层 + SSE + 轮询
+            let s = WorkbenchStore(base: base, model: self)
+            ImageBaseHolder.shared.base = base
+            store = s
+            s.start()
+        } else {
+            // 首改密引导等网页路径仍走壳
+            store = nil
+            controller.load(base: base, path: path)
+        }
         requestNotificationAuthIfNeeded()
     }
 
@@ -229,6 +242,8 @@ final class AppModel: ObservableObject {
         if let base = baseURL?.absoluteString {
             await APIClient.logout(base: base)
         }
+        store?.stop()
+        store = nil
         APIClient.clearSessionCookies()
         controller.clearWebData()
         KeychainStore.clear()
@@ -276,9 +291,18 @@ final class AppModel: ObservableObject {
         showBanner(.doorbell(name: name))
         HapticEngine.vibrate(Constants.vibrateDoorbell)
         SoundEngine.shared.play(.doorbell)
-        if let customerId {
-            _ = customerId  // 预留：横幅点击可深链 /reception/:id
+        doorbellTargetId = customerId
+    }
+
+    /// 门铃横幅点击后的落地会话
+    @Published var doorbellTargetId: String?
+
+    func openDoorbellTarget() {
+        guard let id = doorbellTargetId, let store else {
+            webController.goToReception()
+            return
         }
+        store.openChatById(id)
     }
 
     func showToast(_ text: String) {
