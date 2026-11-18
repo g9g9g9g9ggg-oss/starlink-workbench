@@ -11,14 +11,18 @@ struct RootView: View {
             case .login:
                 LoginView()
             case .workbench:
-                WorkbenchScreen(controller: model.webController)
+                if let store = model.store {
+                    RootTabView(store: store)
+                } else {
+                    WorkbenchScreen(controller: model.webController)
+                }
             }
         }
         .overlay(alignment: .top) {
             if let banner = model.banner {
                 ShellBannerView(banner: banner) {
                     if case .doorbell = banner {
-                        model.webController.goToReception()
+                        model.openDoorbellTarget()
                     }
                     model.banner = nil
                 }
