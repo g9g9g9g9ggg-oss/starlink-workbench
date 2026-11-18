@@ -397,6 +397,11 @@ struct MessageBubble: View {
     private var isMe: Bool { message.isOperator }
     private var pendingAlpha: Double { message.pending ? 0.55 : 1 }
 
+    /// 气泡底色：己方暖纸（深色墨金），对方面板白
+    private var bubbleColor: Color {
+        isMe ? .wxBubbleOut : .wxCell
+    }
+
     var body: some View {
         HStack(alignment: .bottom, spacing: 8) {
             if isMe { Spacer(minLength: 48) }
