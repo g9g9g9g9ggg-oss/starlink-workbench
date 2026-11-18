@@ -26,7 +26,7 @@ extension Color {
     static let wxSeparator = Color(hex: 0xD9D9DE)
 
     // 强调色：朱砂（CTA / 焦点 / 标记线）
-    static let accent = Color(hex: 0xC93A2E)
+    static let stratumAccent = Color(hex: 0xC93A2E)
 
     // 语义（在线状态等，保持可辨识）
     static let statusOnline = Color(hex: 0x0E7C4A)
@@ -53,7 +53,7 @@ extension Color {
 
 // 兼容旧命名（工程内既有引用不动）
 extension Color {
-    static var wxGreen: Color { .accent }          // 强调色接管原绿色位
+    static var wxGreen: Color { .stratumAccent }          // 强调色接管原绿色位
     static var wxBubbleOut: Color {
         UITraitCollection.current.userInterfaceStyle == .dark
             ? Color(hex: 0x2C2A1E)
@@ -96,7 +96,7 @@ struct BigTitle: View {
     var body: some View {
         HStack(spacing: 0) {
             Rectangle()
-                .fill(Color.accent)
+                .fill(Color.stratumAccent)
                 .frame(width: 6, height: 34)
             Text(text)
                 .font(Strat.mono(30, weight: .heavy))
@@ -124,7 +124,7 @@ struct InkButtonLabel: View {
             .frame(maxWidth: .infinity, minHeight: 52)
             .background(
                 RoundedRectangle(cornerRadius: Strat.corner)
-                    .fill(ready ? Color.accent : Color(hex: 0xB8B8BE))
+                    .fill(ready ? Color.stratumAccent : Color(hex: 0xB8B8BE))
             )
     }
 }
