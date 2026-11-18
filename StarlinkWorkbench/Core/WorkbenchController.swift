@@ -27,7 +27,6 @@ final class WorkbenchController: NSObject, ObservableObject {
         let cfg = WKWebViewConfiguration()
         cfg.websiteDataStore = .default()               // 持久化会话，与 Safari 天然隔离（对齐安卓独立数据目录）
         cfg.allowsInlineMediaPlayback = true
-        cfg.mediaTypesRequiringUserAction = []          // 网页提示音自动播放（关键：不弹手势要求）
 
         let ucc = cfg.userContentController
         ucc.addUserScript(WKUserScript(source: WorkbenchController.skinScript,
@@ -342,7 +341,8 @@ extension WorkbenchController: WKUIDelegate {
         decisionHandler(.grant)
     }
 
-    /// 文件选择：拍照 / 相册 / 文件（对齐安卓 onShowFileChooser）
+    /// 文件选择：拍照 / 相册 / 文件（对齐安卓 onShowFileChooser，iOS 17+）
+    @available(iOS 17.0, *)
     func webView(_ webView: WKWebView,
                  runFileChooserWith parameters: WKFileChooserParameters,
                  initiatedByFrame frame: WKFrameInfo,
