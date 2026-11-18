@@ -96,7 +96,7 @@ struct LoginView: View {
                         .frame(height: 54)
                         .background(
                             RoundedRectangle(cornerRadius: Strat.corner)
-                                .fill(canSubmit ? Color.stratumAccent : Color(hex: 0xB8B8BE))
+                                .fill(canSubmit ? Color.accent : Color(hex: 0xB8B8BE))
                         )
                     }
                     .buttonStyle(.plain)
@@ -138,7 +138,7 @@ struct LoginView: View {
 
                 Spacer(minLength: 18)
 
-                Text("v1.6.1 (8)")
+                Text("v2.0.0 (20)")
                     .font(.system(size: 12))
                     .foregroundColor(Color.wxTertiaryText)
                     .padding(.bottom, 16)
