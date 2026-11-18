@@ -341,22 +341,7 @@ extension WorkbenchController: WKUIDelegate {
         decisionHandler(.grant)
     }
 
-    /// 文件选择：拍照 / 相册 / 文件（对齐安卓 onShowFileChooser）
-    func webView(_ webView: WKWebView,
-                 runFileChooserWith parameters: WKFileChooserParameters,
-                 initiatedByFrame frame: WKFrameInfo,
-                 completionHandler: @escaping ([URL]?) -> Void) {
-        DispatchQueue.main.async {
-            guard let vc = self.topViewController() else {
-                completionHandler(nil)
-                return
-            }
-            let coordinator = FilePickerCoordinator(completion: completionHandler)
-            coordinator.owner = self
-            self.filePickerCoordinator = coordinator
-            coordinator.presentActionSheet(from: vc, allowMultiple: parameters.allowsMultipleSelection)
-        }
-    }
+    // 新 SDK 将文件选择方法更名 runOpenPanelWith；原生版工作台已不依赖网页文件选择，此能力由 SwiftUI PhotosPicker/文件选择实现。
 }
 
 // MARK: - 文件选择协调器
