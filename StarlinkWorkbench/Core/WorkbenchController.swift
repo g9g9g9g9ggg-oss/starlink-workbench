@@ -27,6 +27,7 @@ final class WorkbenchController: NSObject, ObservableObject {
         let cfg = WKWebViewConfiguration()
         cfg.websiteDataStore = .default()               // 持久化会话，与 Safari 天然隔离（对齐安卓独立数据目录）
         cfg.allowsInlineMediaPlayback = true
+        cfg.mediaTypesRequiringUserAction = []          // 网页提示音自动播放（关键：不弹手势要求）
 
         let ucc = cfg.userContentController
         ucc.addUserScript(WKUserScript(source: WorkbenchController.skinScript,
@@ -341,8 +342,22 @@ extension WorkbenchController: WKUIDelegate {
         decisionHandler(.grant)
     }
 
-    /// 文件选择：<input type=file> 由网页自渲染系统选择器（iOS 系统键盘栏的「选择文件」），
-    /// 拍照/相册由聊天输入行的 + 面板提供（FilePickerCoordinator）。
+    /// 文件选择：拍照 / 相册 / 文件（对齐安卓 onShowFileChooser）
+    func webView(_ webView: WKWebView,
+                 runFileChooserWith parameters: WKFileChooserParameters,
+                 initiatedByFrame frame: WKFrameInfo,
+                 completionHandler: @escaping ([URL]?) -> Void) {
+        DispatchQueue.main.async {
+            guard let vc = self.topViewController() else {
+                completionHandler(nil)
+                return
+            }
+            let coordinator = FilePickerCoordinator(completion: completionHandler)
+            coordinator.owner = self
+            self.filePickerCoordinator = coordinator
+            coordinator.presentActionSheet(from: vc, allowMultiple: parameters.allowsMultipleSelection)
+        }
+    }
 }
 
 // MARK: - 文件选择协调器
