@@ -52,7 +52,7 @@ struct ConnectView: View {
                     }
                 } else {
                     ProgressView()
-                        .tint(Color.stratumAccent)
+                        .tint(Color.accent)
                         .padding(.top, 4)
                     Text("正在接入现网工作台…")
                         .font(.caption)
